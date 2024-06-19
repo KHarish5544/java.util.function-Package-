@@ -1,0 +1,64 @@
+import java.util.*;
+import java.util.function.Predicate;
+class PredicateInterface {
+	public static void main(String args[]) {
+        // list of string type is defined
+         List<String> Words = Arrays.asList("Ready","To","Visit","Coders","Den","CodeTantriks");
+         // predicate type is declared as string and lambda expression is defined to create object
+         Predicate<String> P = (s)->s.startsWith("C");
+         // Looping in the list
+         for (String W:Words) {
+           //abstract method test in Predicate interface
+           if (P.test(W)) {
+             System.out.println(W);
+           }
+        }
+    }
+}
+
+
+Resultant output:
+
+Coders
+CodeTantriks
+
+
+Type the code given above or given in the editor and execute to check the functionality.
+
+Sample Test Cases
+Test Case 1:
+Expected Output:
+Coders
+CodeTantriks
+
+Answers 
+
+import java.util.*;
+
+import java.util.function.Predicate;
+
+class PredicateInterface{
+	
+	public static void main(String args[]){
+
+		List<String> Words = Arrays.asList("Ready","To","Visit","Coders","Den","CodeTantriks");
+		
+		Predicate<String> P = (s)->s.startsWith("C");
+		
+		for (String W:Words){
+			
+			if (P.test(W)){
+				
+				System.out.println(W);
+				
+			}
+			
+			
+		}
+		
+		
+	}
+	
+	
+	
+}
